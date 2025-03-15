@@ -33,7 +33,11 @@ import { languageOptionList, numberFormat } from '@/components/i18n.js'
 
 const { t } = useI18n()
 
-const params = useUrlSearchParams('history')
+const params = useUrlSearchParams('history', {
+  initialValue: {
+    value: 'engineering-meta',
+  },
+})
 </script>
 
 <style scoped lang="less">
